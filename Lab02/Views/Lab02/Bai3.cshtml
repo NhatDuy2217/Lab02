@@ -1,0 +1,191 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bài3 - Table</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px 28px;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table.eggnog {
+            width: 630px;
+            margin-left: 170px;
+            border: 5px solid #990000;
+            border-collapse: collapse;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+
+        table.eggnog th {
+            background-color: #cc0000;
+            color: white;
+            text-align: left;
+            font-size: 15px;
+            font-weight: normal;
+            padding: 10px 12px;
+            border-bottom: 1px dotted white;
+        }
+
+        table.eggnog td {
+            padding: 6px 12px;
+            color: white;
+            border-bottom: 1px dotted #ffffff;
+        }
+
+        table.eggnog tr:nth-child(odd) td {
+            background-color: #cc0000;
+        }
+
+        table.eggnog tr:nth-child(even) td {
+            background-color: #b84b4b;
+        }
+
+        table.eggnog .note td {
+            background-color: #cc0000;
+            font-style: normal;
+        }
+
+
+        .instructions {
+            width: 630px;
+            margin-left: 170px;
+            box-sizing: border-box;
+            background-color: #cc0000;
+            border-left: 5px solid #990000;
+            border-right: 5px solid #990000;
+            border-bottom: 5px solid #990000;
+            color: white;
+            padding: 8px 14px 14px 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 1.15;
+        }
+
+        .instructions ol {
+            margin: 0;
+            padding-left: 24px;
+        }
+
+
+        .instructions li {
+            padding-left: 3px;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server ">
+        <table class="eggnog">
+            <tr>
+                <th style="width: 48%;">Ingredient</th>
+                <th style="width: 26%;">server 12</th>
+                <th style="width: 26%;">sever 24</th>
+            </tr>
+
+            <tr class="dark">
+                <td>milk</td>
+                <td>1 quart</td>
+                <td>2 quarts</td>
+            </tr>
+
+            <tr class="light">
+                <td>cinnanon sticks</td>
+                <td>2</td>
+                <td>4</td>
+            </tr>
+
+            <tr class="dark">
+                <td>vanilla bean, split</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+
+            <tr class="light">
+                <td>cloves</td>
+                <td>5</td>
+                <td>10</td>
+            </tr>
+
+            <tr class="dark">
+                <td>mace</td>
+                <td>10 blades</td>
+                <td>20 blades</td>
+            </tr>
+
+            <tr class="light">
+                <td>egg yolks</td>
+                <td>12</td>
+                <td>24</td>
+            </tr>
+
+            <tr class="dark">
+                <td>cups sugar</td>
+                <td>1 ½ cups</td>
+                <td>3 cups</td>
+            </tr>
+
+            <tr class="light">
+                <td>dark rum</td>
+                <td>1 ½ cups</td>
+                <td>3 cups</td>
+            </tr>
+
+            <tr class="dark">
+                <td>brandy</td>
+                <td>1 ½ cups</td>
+                <td>3 cups</td>
+            </tr>
+
+            <tr class="light">
+                <td>vanilla</td>
+                <td>1 tbsp</td>
+                <td>2 tbsp</td>
+            </tr>
+
+            <tr class="dark">
+                <td>half-and-half or light cream</td>
+                <td>1 quart</td>
+                <td>2 quart</td>
+            </tr>
+
+            <tr class="light">
+                <td>Freshly grated nutmeg to taste</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div class="instructions">
+            <ol>
+                <li>Combine milk and spices including vanilla bean in a heavy saucepan and let them infuse over lowest<br />
+                possible heat for 5 minutes. Meanwhile, combine yolks and sugar in a large bowl and whisk until<br />
+                mixed.</li>
+                <li>
+                    Bring milk to a boil ang gradually whisk it into the yolk mixture. Return the mixture to the saucepan.<br />
+                    Cook over medium heat, stirring steadily with a wooden spoon, for 2 to 3 minutes, or until foam<br />
+                    subsides and mixture thickens to consistency of heavy cream. (Mixture should thickly coat the back of<br />
+                    a wooden spoon.) Do not boil, or mixture wikk curdle. 
+                </li>
+                <li>
+                    Strain mixture into a large bowl and let cool to room temperature. Stir in rum, brandy, half-and-half,<br />
+                    vanilla and nutmeg.
+                </li>
+                <li>
+                    Refrigerate eggnog for at least 2 hours, preferably overnight. Just before serving, dust stop of eggnog<br />
+                    with addition nutmeg.
+                </li>
+            </ol>
+        </div>
+    </form>
+</body>
+</html>

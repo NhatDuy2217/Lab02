@@ -1,0 +1,205 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bài4 - Table</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px 28px;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .table-container {
+            width: 820px;
+            margin-left: 70px;
+            padding: 10px;
+            background-color: #e8edf0;
+            box-sizing: border-box;
+        }
+
+        .caption {
+            text-align: right;
+            padding-right: 5px;
+            margin-bottom: 5px;
+            color: #66808b;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            background-color: white;
+        }
+
+        th {
+            height: 34px;
+            background-color: #d8edf2;
+            color: #54727d;
+            border: 1px solid #c4dfe5;
+            padding: 5px 10px;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        th.config {
+            width: 180px;
+            background-color: #e8edf0;
+            border-top: none;
+            border-left: none;
+        }
+
+        td {
+            height: 35px;
+            border: 1px solid #c4dfe5;
+            padding: 5px 10px;
+            color: #667980;
+            background-color: #f7fbfc;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            vertical-align: middle;
+        }
+
+        td.label {
+            position: relative;
+            color: #55717b;
+            font-weight: bold;
+            letter-spacing: 2px;
+            background-color: #ffffff;
+            padding-left: 16px;
+        }
+
+        td.label:before {
+            content: "";
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            width: 0;
+            height: 0;
+            border-top: 7px solid #f0c58b;
+            border-right: 7px solid transparent;
+        }
+
+        tr.processor td.label:before {
+            border-top-color: #8fd0ee;
+        }
+
+        tr.bus td.label:before {
+            border-top-color: #8fd0ee;
+        }
+
+        tr.cache td.label:before {
+            border-top-color: #8fd0ee;
+        }
+
+        td.model {
+            font-family: "Courier New", monospace;
+            color: #70848b;
+        }
+
+        td.spec {
+            color: #70848b;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form" runat="sever">
+        <div class="table-container">
+            <div class="caption">
+                Table 1: Power Mac G5 tech specs
+            </div>
+
+            <table>
+                <tr>
+                    <th class="config">
+                        CONFIGURATIONS
+                    </th>
+                    <th>
+                        DUAL 1.8GHZ
+                    </th>
+                    <th>
+                        DUAL 2GHZ
+                    </th>
+                    <th>
+                        DUAL 2.5GHZ
+                    </th>
+                </tr>
+
+
+                <tr>
+                    <td class="label">
+                        MODEL
+                    </td>
+                    <td class="model">
+                        M9454LL/A
+                    </td>
+                    <td class="model">
+                        M9455LL/A
+                    </td>
+                    <td class="model">
+                        M9457LL/A
+                    </td>
+                </tr>
+
+                <tr class="processor">
+                    <td class="label">
+                        G5 PROCESSOR
+                    </td>
+                    <td class="spec">
+                        Dual 1.8GHz PowerPC G5
+                    </td>
+                    <td class="spec">
+                        Dual 2GHz PowerPC G5
+                    </td>
+                    <td class="spec">
+                        Dual 2.5GHz PowerPC G5
+                    </td>
+                </tr>
+
+                <tr class="bus">
+                    <td class="label">
+                        FRONTSIDE BUS
+                    </td>
+                    <td class="spec">
+                        900MHz per processor
+                    </td>
+                    <td class="spec">
+                        1GHz per processor
+                    </td>
+                    <td class="spec">
+                        1.25GHz per processor
+                    </td>
+                </tr>
+
+                <tr class="cache">
+                    <td class="label">
+                        LEVEL 2 CACHE
+                    </td>
+                    <td class="spec">
+                        512K per processor
+                    </td>
+                    <td class="spec">
+                        512K per processor
+                    </td>
+                    <td class="spec">
+                        512K per processor
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

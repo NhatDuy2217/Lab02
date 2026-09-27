@@ -1,0 +1,263 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bài2 - Table</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px 28px;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table.forum {
+            width: 820px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: #333333;
+        }
+
+        table.forum th {
+            background-color: #eeeeee;
+            color: #222222;
+            font-weight: bold;
+            text-align: left;
+            padding: 8px 10px;
+            border-bottom: 2px solid #cccccc;
+        }
+
+        table.forum th.topic {
+            width: 510px;
+        }
+
+        table.forum th.posts {
+            width: 55px;
+            text-align: center;
+        }
+
+        table.forum th.views {
+            width: 60px;
+            text-align: center;
+        }
+
+        table.forum th.lastpost{
+            width: 150px;
+        }
+
+        table.forum td {
+            padding: 7px 10px;
+            border-bottom: 1px solid back;
+            vertical-align: middle;
+        }
+
+        table.forum td.number {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .topic-title {
+            color: #3479a9;
+            font-size: 17px;
+            text-decoration: none;
+        }
+
+        .topic-title:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 18px;
+            margin-right: 5px;
+            color: #4d9bd3;
+            text-align: center;
+        }
+
+        .lock {
+            color: #e5a900;
+        }
+
+        .description {
+            margin-top: 3px;
+            font-size: 12px;
+            color: #222222;
+        }
+
+        .description a {
+            color: #337ab7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .description a:hover {
+            text-decoration: underline;
+        }
+
+        .date {
+            color: #337ab7;
+            font-size: 12px;
+        }
+
+        .author {
+            color: #337ab7;
+            font-size: 12px;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th class="topic">
+                Topic
+            </th>
+
+            <th class="posts">
+                Posts
+            </th>
+
+            <th class="views">
+                Views
+            </th>
+
+            <th class="lastpost">
+                Last Post
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                <span class="icon lock">🔒</span>
+                <a href="#" class="topic-title">
+                    Posting Guidelines
+                </a>
+                <div class="description">
+                    Posted in
+                    <a href="#">Please Read First!</a>
+                    by Joe Gillespie
+                </div>
+            </td>
+
+            <td class="number">
+                1
+            </td>
+
+            <td class="number">
+                288
+            </td>
+
+            <td>
+
+                <div class="date">
+                    Dec 21, 2003
+                </div>
+
+                <div class="author">
+                    by Joe Gillespie
+                </div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span class="icon lock">🔒</span>
+                <a href="#" class="topic-title">
+                    Forum Rules
+                </a>
+                <div class="description">
+                    Posted in
+                    <a href="#">Please Read First!</a>
+                    by Joe Gillespie
+                </div>
+            </td>
+
+            <td class="number">
+                1
+            </td>
+
+            <td class="number">
+                2023
+            </td>
+
+            <td>
+                <div class="date">
+                    Dec 21, 2003
+                </div>
+                <div class="author">
+                    by Joe Gillespie
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span class="icon">💬</span>
+                <a href="#" class="topic-title">
+                    A suitable Word Template
+                </a>
+                <div class="description">
+                    Posted in
+                    <a href="#">Web Design Software</a>
+                    by Wilson Lagg
+                </div>
+            </td>
+
+            <td class="number">
+                2
+            </td>
+
+            <td class="number">
+                199
+            </td>
+
+            <td>
+                <div class="date">
+                    Mar 28, 2008
+                </div>
+                <div class="author">
+                    by Shahzad Asif
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span class="icon">💬</span>
+                <a href="#" class="topic-title">
+                    few HTML and CSS issues
+                </a>
+                <div class="description">
+                    Posted in
+                    <a href="#">Layout</a>
+                    by Jade M
+                </div>
+            </td>
+
+            <td class="number">
+                3
+            </td>
+
+            <td class="number">
+                1
+            </td>
+
+            <td>
+                <div class="date">
+                    Mar 28, 2008
+                </div>
+                <div class="author">
+                    by Shahzad Asif
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
